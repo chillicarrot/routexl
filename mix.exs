@@ -4,7 +4,7 @@ defmodule Routexl.Mixfile do
   def project do
     [
       app: :routexl,
-      version: "0.1.0",
+      version: "1.0.0",
       elixir: "~> 1.4",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
@@ -18,7 +18,7 @@ defmodule Routexl.Mixfile do
     ]
   end
 
-  defp package() do
+  def package() do
     [
       maintainers: ["Sushruth Sivaramakrishnan"],
       licenses: ["Apache 2.0"],
@@ -26,9 +26,9 @@ defmodule Routexl.Mixfile do
     ]
   end
 
-  defp description do
+  def description do
     """
-    RouteXL client for Elixir and Erlang.
+    RouteXL API client for Elixir and Erlang.
     """
   end
 
