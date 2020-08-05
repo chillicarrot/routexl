@@ -19,7 +19,7 @@ defmodule Routexl.Api do
   end
 
   defp process_request_options(options) do
-    options ++ [ssl: [{:versions, [:'tlsv1.2']}], recv_timeout: 50000]
+    options ++ [ssl: [{:versions, [:'tlsv1.2']}], recv_timeout: Application.get_env(:routexl, :recv_timeout, 50000)]
   end
 
   defp process_status_code(status_code) do
