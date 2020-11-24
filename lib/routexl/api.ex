@@ -1,7 +1,7 @@
 defmodule Routexl.Api do
   use HTTPoison.Base
 
-  @base_url "https://api.routexl.nl/"
+  @base_url "https://api.routexl.com/"
 
   def process_url(path) do
     @base_url <> path
